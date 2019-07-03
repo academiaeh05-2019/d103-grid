@@ -1,0 +1,66 @@
+body{
+    display: grid;
+    font-family: 'Marvel', sans-serif;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                        'header header header header'
+                        'section section section batata'
+                        'footer footer footer footer';
+    grid-template-rows: 10vh 500px 60vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw 30vw;
+    /* grid-gap: 1vh; */
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+nav{
+    align-items: center;
+    display: flex;
+    grid-area: navbar;
+    justify-content: space-between;
+    background-color: #A60A33;
+}
+nav div img{
+    margin-left: 20px;
+} 
+nav div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+a{
+    color: white;
+    font-size: 22pt;
+    text-decoration: none;
+}
+header{
+    grid-area: header;
+    background-image: url("images/avengers-final.jpg");
+}
+section{
+    grid-area: section;
+    background-color: #010B40;
+}
+section h2{
+    color: white;
+}
+section p{
+    color: white;
+}
+aside{
+    grid-area: batata;
+    background-color: #62AFE9;
+}
+aside img{
+    width: 130px;
+}
+aside p{
+    font-size: 20pt;
+    margin: 0;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    background-color: magenta;
+}
